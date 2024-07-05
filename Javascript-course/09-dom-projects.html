@@ -15,11 +15,15 @@
 
 
     <p>Amazon Shipping Calculator</p>
-    <input placeholder="Cost of order" class="js-cost-input" onkeydown="console.log(event);">
+    <input placeholder="Cost of order" class="js-cost-input" onkeydown="handleCostKeydown(event);">
     <button onclick=" calculateTotal() ">Calculate</button>
     <p class="js-cost-value"></p>
 
     <script>
+        String(25)
+        console.log('25' - 5);
+        console.log('25' + 5);  
+
         function calculateTotal() {
             let cost = Number( document.querySelector('.js-cost-input').value );
 
